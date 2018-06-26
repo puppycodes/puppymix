@@ -27,7 +27,13 @@ padding:1rem 0;
 ================================================== */
 
 .container { position:relative; margin:0 auto; max-width:800px; width:100%; }
-.column { width:inherit; }
+.column {
+
+  width:inherit;
+  border-right: 1px solid;
+  border-left: 1px solid;
+
+}
 
 
 /* Typography / Links
@@ -67,13 +73,14 @@ margin:0 auto;
 #tracks {
   position: relative;
   text-align: right;
-  margin-top: 20px;
+
 }
 
 #nowPlay {
   display: block;
   background: #ffd9ff;
   padding-left: 21px;
+  border-top: 1px solid;
 }
 
 #npAction {
@@ -88,6 +95,7 @@ position:relative;
   display: block;
   margin: 0;
   padding: 21px 0;
+  border-bottom: 1px solid;
 }
 
 #plList li:hover {
@@ -142,20 +150,22 @@ color:#806886;
 
 
 a[id^="btn"] {
-border-radius:3px;
-color:#888888;
-cursor:pointer;
-display:inline-block;
-font-size:2rem;
-height:35px;
-line-height:.8;
-margin:0 20px 20px;
-padding:5px 10px;
-text-decoration:none;
-transition:background .3s ease;
-width:35px;
-position: relative;
-top: 10px;
+  border-radius: 3px;
+  color: #6f6f6f;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  height: 22px;
+  line-height: .8;
+  margin: 0 20px 19px;
+  padding: 0px 7px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  transition: background .3s ease;
+  width: 35px;
+  /* background-color: #f1bdff; */
+  position: relative;
+  top: 10px;
 }
 
 a[id^="btn"]:last-child {
@@ -178,10 +188,11 @@ padding:0;
 ================================================== */
 
 .plyr--audio .plyr__controls {
-background-color:#ffccf9;
+background-color: #ffd9ff;
 border:none;
 color:#888;
-padding:20px 20px 20px 13px;
+border-bottom: 1px solid;
+padding: 10px 20px 10px 13px;
 width:100%;
 display: inline-flex;
 }
@@ -237,13 +248,15 @@ color:rgba(0,0,0,.1);
 
 .title {
   float: left;
-  padding-top: 8px;
+    padding-top: 10px;
+
 }
 
 .status {
   clear: both;
   float: left;
   font-size: 12px;
+  display: none;
 }
 
 .logo {
