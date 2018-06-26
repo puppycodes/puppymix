@@ -1,0 +1,273 @@
+
+
+
+/* Global Styles
+================================================== */
+
+html,body {
+-webkit-font-smoothing:antialiased;
+-webkit-text-size-adjust:100%;
+background-color:#eaddff;
+color:#806886;
+font-size:105%;
+font-family:"Oxygen", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight:300;
+letter-spacing:.025rem;
+line-height:1.618;
+padding:1rem 0;
+}
+
+* {
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+-webkit-tap-highlight-color:transparent;
+}
+
+
+/* Setup
+================================================== */
+
+.container { position:relative; margin:0 auto; max-width:800px; width:100%; }
+.column { width:inherit; }
+
+
+/* Typography / Links
+================================================== */
+
+p { color:#fff; display:block; font-size:.9rem; font-weight:400; margin:0 0 2px; }
+
+a,a:visited { color:#8cc3e6; outline:0; text-decoration:underline; }
+a:hover,a:focus { color:#bbdef5; }
+p a,p a:visited { line-height:inherit; }
+
+
+/* Misc.
+================================================== */
+
+.add-bottom { margin-bottom:2rem !important; }
+.left { float:left; }
+.right { float:right; }
+.center { text-align:center; }
+
+
+/* Audio Player Styles
+================================================== */
+
+audio {
+margin:0 15px 0 14px;
+width:670px;
+}
+
+#mainwrap {}
+
+#audiowrap,
+#plwrap {
+margin:0 auto;
+}
+
+#tracks {
+  position: relative;
+  text-align: right;
+  margin-top: 20px;
+}
+
+#nowPlay {
+  display: block;
+  background: #ffd9ff;
+  padding-left: 21px;
+}
+
+#npAction {
+position:relative;
+}
+
+#npTitle {
+}
+
+#plList li {
+  cursor: pointer;
+  display: block;
+  margin: 0;
+  padding: 21px 0;
+}
+
+#plList li:hover {
+  background-color: #dac6fb;
+}
+
+.plItem {
+  display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+}
+
+.plTitle {
+  text-overflow: ellipsis;
+      padding-left: 20px;
+      display: inline-block;
+      clear: both;
+      width: 100%;
+      display: none;
+}
+
+.plNum {
+  padding-left: 21px;
+  width: 100px;
+  display: block;
+  height: 100px;
+  float: left;
+}
+
+.plNum img {
+  width: 100px;
+}
+
+.plLength {
+  padding-left: 21px;
+  position: absolute;
+  right: 21px;
+  display: none;
+}
+
+.plSel{
+background-color: #ffc1f8;
+color:#806886;
+
+}
+
+
+a[id^="btn"] {
+border-radius:3px;
+color:#888888;
+cursor:pointer;
+display:inline-block;
+font-size:2rem;
+height:35px;
+line-height:.8;
+margin:0 20px 20px;
+padding:5px 10px;
+text-decoration:none;
+transition:background .3s ease;
+width:35px;
+position: relative;
+top: 10px;
+}
+
+a[id^="btn"]:last-child {
+margin-left:-4px;
+}
+
+a[id^="btn"]:hover,
+a[id^="btn"]:active {
+background-color: #806886;
+color:#fff;
+}
+
+a[id^="btn"]::-moz-focus-inner {
+border:0;
+padding:0;
+}
+
+
+/* Plyr Overrides
+================================================== */
+
+.plyr--audio .plyr__controls {
+background-color:#ffccf9;
+border:none;
+color:#888;
+padding:20px 20px 20px 13px;
+width:100%;
+display: inline-flex;
+}
+
+
+.plyr--audio .plyr__controls button.tab-focus:focus,
+.plyr--audio .plyr__controls button:hover,
+.plyr__play-large {
+background:rgba(0,0,0,.1);
+}
+
+.plyr__progress--played, .plyr__volume--display {
+color:rgba(0,0,0,.1);
+}
+
+.plyr--audio .plyr__progress--buffer,
+.plyr--audio .plyr__volume--display {
+background:rgba(0,0,0,.1);
+}
+
+.plyr--audio .plyr__progress--buffer {
+color:rgba(0,0,0,.1);
+}
+
+
+.plyr--audio .plyr__controls button.tab-focus:focus, .plyr--audio .plyr__controls button:hover, .plyr__play-large {
+    background: #806886;
+    color: #fff;
+}
+
+/* Media Queries
+================================================== */
+
+@media only screen and (max-width:800px) {
+    #nowPlay {
+
+
+    }
+    .logo {
+
+    }
+}
+
+
+
+.art {
+  width: 250px;
+}
+
+.art img {
+  width: 100%;
+}
+
+.title {
+  float: left;
+  padding-top: 8px;
+}
+
+.status {
+  clear: both;
+  float: left;
+  font-size: 12px;
+}
+
+.logo {
+width: 100%;
+margin-bottom: 10%;
+}
+
+.logo .text {
+  width: 80%;
+}
+
+.pup {
+  width: 20%;
+  float: right;
+  position: relative;
+  top: -10px;
+  left: 10px;
+}
+
+.pup img {
+  width: 100%;
+}
+
+.list {
+  font-size: 14px;
+padding: 20px;
+}
