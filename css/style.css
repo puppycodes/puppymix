@@ -32,6 +32,8 @@ padding:1rem 0;
   width:inherit;
   border-right: 1px solid;
   border-left: 1px solid;
+  max-width: 95%;
+margin: auto;
 
 }
 
